@@ -1,0 +1,39 @@
+.navbar {
+  @apply py-3 px-3 items-end !bg-gray-300 !text-black dark:!bg-gray-800 dark:!text-white;
+}
+
+.navbar__drawer--paper {
+  @apply justify-center !bg-gray-300/[0.2] dark:!bg-gray-800 dark:!text-white;
+}
+
+.navbar__drawer--menu-list {
+  @apply flex flex-col gap-10;
+
+  & li {
+    @apply justify-center dark:text-white text-lg;
+
+    &:hover {
+      @apply !bg-gray-400 dark:!bg-gray-700;
+    }
+  }
+}
+
+.navbar__menu--icon {
+  @apply !text-3xl text-white;
+}
+
+.navbar__links {
+  @apply lg:flex hidden gap-4;
+}
+
+.navbar__link {
+  @apply dark:text-white p-3 text-lg;
+
+  &:hover {
+    @apply !bg-gray-400 dark:!bg-gray-700;
+  }
+}
+
+.navbar__mobile {
+  @apply lg:hidden flex;
+}
